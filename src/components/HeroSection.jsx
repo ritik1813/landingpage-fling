@@ -135,7 +135,7 @@ export default function HeroSection() {
               Thanks for joining! You're one step away from real growth.
             </p>
             <a
-              href="https://chat.whatsapp.com/YOUR_INVITE_LINK"
+              href="https://chat.whatsapp.com/HZtDZ2YMYATADMdFheCi9Z"
               target="_blank"
               rel="noopener noreferrer"
             >

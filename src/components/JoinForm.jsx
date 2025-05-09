@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import axios from 'axios';
+ 
 const JoinForm = () => {
   const [email, setEmail] = useState('');
   const [name, setName] = useState('');
@@ -23,20 +23,29 @@ const JoinForm = () => {
     setShowModal(true);
   };
 
-  const handleSubmitName = async () => {
+  const handleFinalSubmit = async (e) => {
+    e.preventDefault();
+    if (!name) return;
+
     try {
-      const res = await axios.post('http://localhost:5000/api/submit', {
-        name,
-        email,
-      });
-  
-      console.log(res.data); // Optional: confirm success
-      setShowPopup(false);
-      setShowThankYou(true);
-      setName("");
-      setEmail("");
+        const response = await fetch("http://localhost:5000/api/join", {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ email, name })
+          });
+          
+          const data = await response.json();
+          if (!response.ok) {
+        setError(data.message);
+      } else {
+        setSubmitted(true);
+        setShowModal(false);
+        setEmail('');
+        setName('');
+        setError('');
+      }
     } catch (err) {
-      console.error('Error saving user:', err);
+      setError('Something went wrong');
     }
   };
 
@@ -44,7 +53,7 @@ const JoinForm = () => {
     <div className="p-4">
       {submitted ? (
         <div className="text-green-600">
-          Thanks for joining! 👉 <a href="https://chat.whatsapp.com/YOUR_COMMUNITY_LINK" target="_blank" rel="noopener noreferrer" className="underline text-blue-600">Join our WhatsApp Community</a>
+          Thanks for joining! 👉 <a href="https://chat.whatsapp.com/HZtDZ2YMYATADMdFheCi9Z" target="_blank" rel="noopener noreferrer" className="underline text-blue-600">Join our WhatsApp Community</a>
         </div>
       ) : (
         <form onSubmit={handleEmailSubmit} className="space-y-4">

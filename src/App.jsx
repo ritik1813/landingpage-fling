@@ -17,7 +17,7 @@ function App() {
       <FeaturesSection />
       <CTASection />
       <Footer />
-      <JoinForm />
+       
       <WhatsAppButton />
     </div>
   );
