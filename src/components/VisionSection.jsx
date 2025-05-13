@@ -53,19 +53,19 @@ const VisionSection = () => {
             <ul className="space-y-4">
               <li className="flex items-start">
                 <X className="text-red-500 h-5 w-5 mr-2 mt-1 flex-shrink-0" />
-                <span>Spending months trying to learn every skill yourself</span>
+                <span>Takes forever to find the right people to build with</span>
               </li>
               <li className="flex items-start">
                 <X className="text-red-500 h-5 w-5 mr-2 mt-1 flex-shrink-0" />
-                <span>Repeatedly hitting roadblocks outside your expertise</span>
+                <span>You have skills — but not the full team to start</span>
               </li>
               <li className="flex items-start">
                 <X className="text-red-500 h-5 w-5 mr-2 mt-1 flex-shrink-0" />
-                <span>Settling for mediocre quality in critical areas</span>
+                <span>Ideas die before they even get off the ground</span>
               </li>
               <li className="flex items-start">
                 <X className="text-red-500 h-5 w-5 mr-2 mt-1 flex-shrink-0" />
-                <span>Watching your project slowly lose momentum</span>
+                <span>You're stuck waiting, instead of creating</span>
               </li>
             </ul>
           </div>
@@ -81,19 +81,19 @@ const VisionSection = () => {
   <ul className="space-y-4">
     <li className="flex items-start">
       <Check className="h-5 w-5 mr-2 mt-1 flex-shrink-0 text-purple-600" />
-      <span className="text-black">Focusing solely on what you do best</span>
+      <span className="text-black">Find teammates who fill your gaps, instantly</span>
     </li>
     <li className="flex items-start">
       <Check className="h-5 w-5 mr-2 mt-1 flex-shrink-0 text-purple-600" />
-      <span className="text-black">Partnering with specialists who excel where you don't</span>
+      <span className="text-black">Focus on what you do best — we match you with the res</span>
     </li>
     <li className="flex items-start">
       <Check className="h-5 w-5 mr-2 mt-1 flex-shrink-0 text-purple-600" />
-      <span className="text-black">Achieving professional quality in every aspect</span>
+      <span className="text-black">Get inspired by real ideas and real people</span>
     </li>
     <li className="flex items-start">
       <Check className="h-5 w-5 mr-2 mt-1 flex-shrink-0 text-purple-600" />
-      <span className="text-black">Building unstoppable momentum through teamwork</span>
+      <span className="text-black">Bo from “thinking about it” to actually building</span>
     </li>
   </ul>
 </div>
